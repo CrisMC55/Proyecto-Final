@@ -1,0 +1,14 @@
+*{
+    margin:0px;
+    background-color: var(--white);
+}
+
+.div1{
+    width: 90%;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'VictorSerif';
+}
