@@ -17,3 +17,6 @@
     --accent: #E601D6;
     --white: #FCFAF5;
 }
+::-webkit-scrollbar {
+    display:none;
+    }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto y Fotos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #contenedor {
+      position: relative;
+      width: 100%;
+      height: 400px; /* ajusta la altura según tus necesidades */
+      background-color: #f2f2f2;
+    }
+
+    #fotos {
+      position: absolute;
+      top: 20px; /* ajusta la posición vertical de las fotos */
+      left: 50%; /* coloca las fotos en el centro horizontal */
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-around;
+      width: 80%; /* ajusta el ancho según tus necesidades */
+      z-index: 1; /* coloca las fotos detrás del texto */
+    }
+
+    #fotos img {
+      max-width: 10%;
+      height: auto;
+    }
+
+    #texto {
+      position: absolute;
+      top: 20px; /* ajusta la posición vertical del texto */
+      left: 50%; /* coloca el texto en el centro horizontal */
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 2; /* coloca el texto delante de las fotos */
+      color:violet;
+    }
+  </style>
+</head>
+<body>
+
+<div id="contenedor">
+  <div id="fotos">
+    <img src="img/Proyecto1.jpeg" alt="Foto 1">
+    <img src="img/Proyecto1.jpeg" alt="Foto 2">
+    <img src="img/Proyecto1.jpeg" alt="Foto 3">
+  </div>
+  <div id="texto">
+    <p>Este es mi texto</p>
+  </div>
+</div>
+
+</body>
+</html>
