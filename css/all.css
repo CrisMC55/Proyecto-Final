@@ -1,3 +1,7 @@
+*{
+    cursor:url(/img/cursor.svg), auto;
+}
+
 @font-face {
     font-family: 'PPNeue';
     src: url('fonts/PPNeueMontreal-Medium.otf') format('opentype'),
@@ -19,4 +23,4 @@
 }
 ::-webkit-scrollbar {
     display:none;
-    }
+}

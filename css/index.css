@@ -36,6 +36,12 @@ nav a {
     background-color: var(--white);
 }
 
+nav a:hover {
+    font-style: italic;
+    font-family: 'PPNeue';
+
+}
+
 header {
     padding-top: 10px;
     width: 100%;
@@ -60,6 +66,10 @@ header button:hover{
     border: none;
 }
 
+.titulo{
+    z-index: 2;
+}
+
 .div1 {
     height: 100vh;
     padding: 20px;
@@ -67,6 +77,7 @@ header button:hover{
     flex-direction: column;
     justify-content: center;
     position: relative;
+    z-index: 2;
 }
 
 .imagenFondo {
@@ -74,6 +85,21 @@ header button:hover{
     position: absolute;
     bottom: 200px;
     right: 50px;
+    z-index: 1;
+}
+
+.imagenFondo2 {
+    width: 10%;
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    z-index: 1;
+}
+.imagenFondo3 {
+    width: 20%;
+    position: absolute;
+    top: 500px;
+    right: 700px;
     z-index: 1;
 }
 
@@ -101,3 +127,9 @@ h1 {
     width: 100%;
     width: 100vh;
 }
+
+.dark-mode {
+    --dark:#3a393b;
+    --accent:white;
+    --white:black;
+  }
