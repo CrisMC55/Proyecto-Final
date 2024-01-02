@@ -37,10 +37,27 @@ nav a {
 }
 
 header {
+    padding-top: 10px;
     width: 100%;
     height: 50px;
     position: fixed;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+header button{
+    background-color: var(--dark);
+    width: 2.5%;
+    height: 50%;
+    margin-right: 20px;
+    border:none;
+}
+
+header button:hover{
+    width: 2%;
+    height: 40%;
+    border: none;
 }
 
 .div1 {
