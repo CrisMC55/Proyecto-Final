@@ -3,10 +3,44 @@
     background-color: var(--white);
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 90vh;
+    width: 80vh;
+    height: 7%;
+    background-color: var(--white);
+    z-index: 1001; /* Un z-index mayor que el del header */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark);
+    border-radius: 10px;
+}
+
+nav{
+    background-color: var(--dark);
+}
+
+/* Estilo de los enlaces del menú */
+nav a {
+    margin: 0px 15px 0px 15px;
+    text-decoration: none;
+    color: var(--accent);
+    font-family: 'VictorSerif';
+    font-size: 16px;
+    font-family: 'PPNeue';
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
 header {
     width: 100%;
     height: 50px;
     position: fixed;
+    z-index: 100;
 }
 
 .div1 {
