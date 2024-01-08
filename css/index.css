@@ -47,12 +47,14 @@ h1 {
     font-size: 90px;
     color: var(--accent);
     background-color: rgba(242, 242, 242, 0);
+    font-weight: 100;
 }
 
 .sub {
     font-family: 'VictorSerif';
     font-size: 90px;
     display: flex;
+    font-weight: 100;
 }
 
 .nuestrosProyectos {
@@ -84,6 +86,7 @@ h1 {
     margin-bottom: 35px;
     color:var(--accent);
     padding: 30px;
+    font-weight: 100;
 }
 
 .izquierda h5{
@@ -166,6 +169,7 @@ h1 {
     margin-bottom: 35px;
     color:var(--accent);
     padding: 30px;
+    font-weight: 100;
 }
 
 .Trabajemos a{
@@ -242,6 +246,7 @@ h1 {
     line-height: 1;
     color:var(--accent);
     padding: 30px;
+    font-weight: 100;
 }
 
 .texto h5{
