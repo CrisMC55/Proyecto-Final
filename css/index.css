@@ -344,3 +344,233 @@ h1 {
     margin-bottom: 8px;
 }
 
+
+/*MEDIA-QUERY*/
+
+@media (max-width: 2600px){
+    .titulo{
+        margin-left: 5% ;
+        font-size: 100px;
+    }
+    .sub {
+        font-size: 100px;
+        margin-right: 5% ;
+    }
+
+    .imagenFondo {
+        bottom: 400px;
+    }
+    
+    .imagenFondo2 {
+        width: 15%;
+        position: absolute;
+        top: 200px;
+        right: 1000px;
+        z-index: 1;
+    }
+    .imagenFondo3 {
+        top: 900px;
+        left: 100px;
+        z-index: 1;
+    }
+
+    .izquierda h2{
+        font-size: 100px;
+    }
+
+    .izquierda h5{
+        font-size: 50px;
+    }
+    
+    .izquierda a{
+        font-size: 40px;
+        width: 35%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .derecha img{
+        width: 25%;
+    }
+    
+    .Derecha1{
+        position: absolute;
+        bottom: 200px;
+        right: 100px;
+        z-index: 1;
+    }
+    
+    .Derecha2{
+        position: absolute;
+        top: 120px;
+        left: 900px;
+    }
+    
+    .Derecha3{
+        position: absolute;
+        bottom: 500px;
+        left:600px;
+        z-index: 0;
+    }
+
+    .Trabajemos h2{
+        font-size: 100px;
+    }
+
+    .Trabajemos a{
+        font-size: 40px;
+        width: 25%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .TextoSecundario{
+        top: 550px;
+        left:650px;
+        font-size: 40px;
+    }
+    
+    .TextoSecundario2{
+        font-size: 40px;
+        bottom: 500px;
+        right: 500px;
+    }
+    
+    .Trabajemos img{
+        top:200px;
+        height: 25%;
+        right: 450px;
+    }
+
+    .texto h2{
+        font-size: 100px;
+    }
+    
+    .texto h5{
+        font-size: 40px;
+    }
+
+    .formulario a {
+        font-size: 40px;
+        width: 25%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea{
+        border: none;
+        font-size: 30px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 30px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .formulario {
+        padding: 100px 100px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 1500px){
+    .imagenFondo {
+        bottom: 500px;
+    }
+    
+    .imagenFondo2 {
+        width: 15%;
+        position: absolute;
+        top: 200px;
+        left: 800px;
+        z-index: 1;
+    }
+    .imagenFondo3 {
+        top: 900px;
+        left: 100px;
+        z-index: 1;
+    }
+
+    .izquierda h5{
+        font-size: 35px;
+        padding: 0px 50px;
+    }
+    
+    .izquierda a{
+        font-size: 35px;
+        width: 35%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .derecha img{
+        width: 25%;
+    }
+    
+    .Derecha1{
+        position: absolute;
+        bottom: 500px;
+        right: 100px;
+        z-index: 1;
+    }
+    
+    .Derecha2{
+        position: absolute;
+        top: 500px;
+        left: 100px;
+    }
+    
+    .Derecha3{
+        position: absolute;
+        bottom: 800px;
+        left:400px;
+        z-index: 0;
+    }
+
+    .Trabajemos h2{
+        font-size: 100px;
+    }
+
+    .Trabajemos a{
+        font-size: 35px;
+        width: 25%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .TextoSecundario{
+        top: 550px;
+        left:250px;
+        font-size: 35px;
+    }
+    
+    .TextoSecundario2{
+        font-size: 35px;
+        bottom: 500px;
+        right: 200px;
+    }
+    
+    .Trabajemos img{
+        top:200px;
+        height: 25%;
+        right: 150px;
+    }
+
+    .texto h2{
+        font-size: 100px;
+    }
+    
+    .texto h5{
+        font-size: 35px;
+    }
+
+    .formulario a {
+        font-size: 35px;
+        width: 25%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+}
