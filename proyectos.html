@@ -39,6 +39,7 @@
       <a href="">dirección de fotografía</a>
     </div>
     <div class="main--diseño" id="divPrueba">
+      <div class="main--diseño--contenedor">
       <div class="main--diseño--izquierda">
         <h2>*</h2>
         <img class="main--diseño--izquierda--imagen" src="img/carteles-19.jpg" alt="">
@@ -56,7 +57,8 @@
         <h5>diseño gráfico</h5>
       </div>
     </div>
-    <div class="main--fotografia" id="foto">
+    </div>
+    <!--<div class="main--fotografia" id="foto">
       <div class="main--fotografia--izquierda">
         <h2>*</h2>
         <img src="img/carteles-19.jpg" alt="">
@@ -74,7 +76,7 @@
         <h5>fotografía</h5>
       </div>
     </div>
-  </div>
+  </div>-->
 </body>
 
 <script>
@@ -82,10 +84,50 @@
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
+
+  var url = "./db/proyectos.json"
+
+  fetch(url)
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Error" + response.status);
+      }
+      return response.json();
+    })
+    .then(function (data) {
+      imprimirInformacion(data.fotografia);
+    });
+
+  const divProyecto = document.getElementById("divPrueba");
+  divProyecto.innerHTML = "";
+
+  function imprimirInformacion(proyectos) {
+    proyectos.forEach(function (proyecto) {
+      divProyecto.innerHTML +=
+        `<div class="main--diseño--contenedor">
+        <div class="main--diseño--izquierda">
+          <h2>*</h2>
+          <img class="main--diseño--izquierda--imagen" src=${proyecto.imagen[1]} alt="">
+          <img src="${proyecto.imagen[0]}" alt="">
+          <img class="main--diseño--izquierda--imagen-variante" src=${proyecto.imagen[1]} alt="">
+        </div>
+        <div class="main--diseño--derecha">
+          <h2>${proyecto.titulo}</h2>
+          <h4>${proyecto.fecha}</h4>
+          <p>${proyecto.contenido}</p>
+          <h5>${proyecto.tag}</h5>
+        </div>
+      </div>`;
+    });
+  }
 </script>
 
-<script>
-  var url = "./db/proyectos.json"
+<!-- ... Tu código HTML posterior ... -->
+
+
+<!-- ... Tu código HTML posterior ... -->
+
+<!--var url = "./db/proyectos.json"
 
   fetch(url)
     .then(function (response) {
@@ -123,7 +165,6 @@
           pariatur</p>
         <h5>diseño gráfico</h5>
       </div>`
-  };
-</script>
+  }-->
 
 </html>

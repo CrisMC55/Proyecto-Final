@@ -11,7 +11,13 @@
         "fecha": "mayo 2026",
         "contenido": "contenido prueba de fotografia 2024",
         "tag": "fotografia",
-        "imagen": "img/besties.jpg"
+        "imagen": ["img/besties.jpg", "img/joaquincomiendo.jpg"]
+    },{
+        "titulo": "prueba 2",
+        "fecha": "mayo 2026",
+        "contenido": "contenido prueba de fotografia 2024",
+        "tag": "fotografia",
+        "imagen": ["img/besties.jpg"]
     }
 
     ]
