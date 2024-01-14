@@ -132,35 +132,35 @@ nav a:hover {
 
     header {
         width: 100%;
-        height: 150px;
+        height: 5%;
     }
     header button{
-        width: 2.5%;
-        height: 100%;
+        width: 1.5%;
+        height: 70%;
 
     }
     header button:hover{
-        width: 2%;
-        height: 40%;
+        width: 1%;
+        height: 50%;
 
     }
     header a{
-        font-size: 60px;
+        font-size: 20px;
         margin-left: 15px;
     }
     header h6{
-        font-size: 25px;
+        font-size: 12px;
     }
     .menu {
         top: 90vh;
-        width: 60vh;
+        width: 50vh;
         border-radius: 20px;
     }
     nav a {
-        margin: 0px 30px 0px 30px;
-        font-size: 30px;
+        margin: 0px 10px 0px 10px;
+        font-size: 15px;
         font-family: 'PPNeue';
-        padding: 20px 30px;
+        padding: 10px;
     }
 }
 
@@ -168,26 +168,26 @@ nav a:hover {
 
     header {
         width: 100%;
-        height: 50px;
+        height: 5%;
     }
 
     header button{
-        width: 2%;
-        height: 50%;
+        width: 1.5%;
+        height: 60%;
 
     }
     header button:hover{
-        width: 1.5%;
+        width: 1%;
         height: 40%;
 
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 790px){
 
     header {
         width: 100%;
-        height: 50px;
+        height: 5%;
     }
 
     header button{
@@ -199,6 +199,49 @@ nav a:hover {
         width: 1.5%;
         height: 40%;
 
+    }
+
+    .menu {
+        top: 90vh;
+        width: 40vh;
+        border-radius: 15px;
+    }
+    nav a {
+        margin: 0px 10px 0px 0px;
+        font-size: 12px;
+        font-family: 'PPNeue';
+        padding: 10px;
+    }
+}
+
+@media (width: 360px){
+
+    header {
+        width: 100%;
+        height: 5%;
+    }
+
+    header button{
+        width: 2%;
+        height: 50%;
+
+    }
+    header button:hover{
+        width: 1.5%;
+        height: 40%;
+
+    }
+
+    .menu {
+        top: 95vh;
+        width: 35vh;
+        border-radius: 15px;
+    }
+    nav a {
+        margin: 0px 10px 0px 0px;
+        font-size: 15px;
+        font-family: 'PPNeue';
+        padding: 10px;
     }
 }
 
