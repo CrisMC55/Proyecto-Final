@@ -56,8 +56,8 @@
 }
 
 .main--fotografia--izquierda img{
-    margin-left: 20px;
-    height: 50%;
+    margin: 0px 0px 20px 20px;
+    height: 80%;
 }
 
 .main--fotografia--izquierda h2{
@@ -131,19 +131,23 @@
     z-index: 2;
 }
 
+.main--diseño--izquierda--imagen-centro{
+    position: absolute;
+    margin-top: 70px;
+    left:145px;
+    width: 60%;
+}
+
 .main--diseño--izquierda--imagen{
-    margin-left: 20px;
-    height: 50%;
-    bottom: 20px;
-    right: 10px;
+    height: 100%;
+    right: 80px;
     position: absolute;
     z-index: 1;
 }
 
 .main--diseño--izquierda--imagen-variante{
-    margin-left: 20px;
-    height: 50%;
-    top: 10px;
+    height: 100%;
+    top: 120px;
     left: 100px;
     position: absolute;
     z-index: 1;
@@ -190,6 +194,82 @@
     margin-bottom: 10px;
 }
 
-.main--fotografia--izquierda video{
+/*VIDEO*/
+
+/*FOTOGRAFRIA*/ 
+
+.main--video{
+    width: 85vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    margin-top:40px;
+}
+
+.main--video--contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0px;
+    border-top: 1px solid var(--accent);
+}
+
+.main--video--izquierda{
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.main--video--izquierda img{
+    margin-left: 20px;
+    height: 50%;
+}
+
+.main--video--izquierda h2{
+    font-family: 'VictorSerif';
+    font-weight: 100;
+    font-size: 100px;
+    color: var(--accent)
+}
+
+.main--video--derecha{
+    width: 50%;
+    height: 100%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main--video--derecha h2{
+    font-family: 'VictorSerif';
+    color: var(--dark);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.main--video--derecha h4{
+    font-family: 'PPNeue';
+    color: var(--dark);
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.main--video--derecha h5{
+    font-family: 'VictorSerif';
+    color: var(--accent);
+    font-weight: 200;
+}
+.main--video--derecha p{
+    font-family: 'PPNeue';
+    color: var(--dark);
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.main--video--izquierda video{
     width: 90%;
 }
