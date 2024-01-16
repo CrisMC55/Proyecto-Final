@@ -613,7 +613,7 @@ h1 {
     }
 }
 
-@media (max-width: 790px){
+@media (min-width: 790px){
     .titulo{
         margin-left: 5% ;
         font-size: 60px;
@@ -742,7 +742,7 @@ h1 {
     }
 }
 
-@media (width: 360px){
+@media (max-width: 360px){
 
     .div1{
         align-items: center;
