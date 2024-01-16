@@ -1,46 +1,46 @@
 {
     "diseño": [
     {
-        "titulo": "ejemplo",
-        "fecha": "mayo 2024",
-        "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tag": "diseño",
-        "imagen": ["img/besties.jpg", "img/joaquincomiendo.jpg"]
+        "titulo": "European Gymnastic Championship",
+        "fecha": "mayo 2022",
+        "contenido": "Propuesta de identidad visual para el European Gymnastic Championship, creación de logotipo, señalética, cartelería y adaptaciones a redes sociales y televisión. Proyecto realizado junto a Raquel García.",
+        "tag": "diseño gráfico",
+        "imagen": ["img/EGC2.jpg", "img/EGC1.jpg", "img/EGC3.jpg"]
     },{
-        "titulo": "prueba 2 diseño",
-        "fecha": "mayo 2026",
-        "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tag": "diseño",
-        "imagen": ["img/besties.jpg", "img/joaquincomiendo.jpg"]
+        "titulo": "Radix",
+        "fecha": "mayo 2023",
+        "contenido": "Propuesta de identidad visual para la marca de productos de cuidado personal Radix. Creación de naming, ilustraciones y aplicación a envases.",
+        "tag": "diseño gráfico",
+        "imagen": ["img/SKINCARE2.jpg", "img/SKINCARE1.jpg", "img/SKINCARE3.jpg"]
     },{
-        "titulo": "prueba 3 diseño",
-        "fecha": "mayo 2026",
-        "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "tag": "diseño",
-        "imagen": ["img/besties.jpg"]
+        "titulo": "Nexo",
+        "fecha": "junio 2023",
+        "contenido": "Creación de una revista colaborativa para la Facultad de Bellas Artes de la UPV. Elaboración de identidad visual, fotografía, adaptación a redes sociales, cartelería, vídeo e impresión de fanzine en formato A3 en risografía. Proyecto realizado junto a Mar Chover.",
+        "tag": "diseño gráfico",
+        "imagen": ["img/NEXO1.png", "img/NEXO2.jpg", "img/NEXO3.jpg"]
     }
 
     ],
 
     "fotografia": [
         {
-            "titulo": "ejemplo Fotografia",
-            "fecha": "mayo 2024",
-            "contenido": "contenido prueba de fotografia 2024",
+            "titulo": "Empoderamiento",
+            "fecha": "marzo 2023",
+            "contenido": "Serie compuesta por 3 fotografías, en formato vertical. Bajo la temática de empoderamiento femenino, las imágenes muestran a una mujer segura de sí misma, descubriendo su camino. Fotografías realizadas junto a Natalia Jiménez, Cristina López y Judith Sánchez.",
             "tag": "fotografia",
-            "imagen": ["img/carteles-19.jpg", "img/carteles-19.jpg","img/carteles-19.jpg"]
+            "imagen": ["img/mujer-empoderada1.jpg", "img/mujer-empoderada2.jpg","img/mujer-empoderada3.jpg"]
         },{
-            "titulo": "prueba 2 foto",
-            "fecha": "mayo 2026",
-            "contenido": "contenido prueba de fotografia 2024",
+            "titulo": "Área (dirección fotográfica)",
+            "fecha": "abril 2023",
+            "contenido": "Selección de tres fotografías realizadas para la marca Área. La marca quería transmitir la conexión con el mediterráneo, la tranquilidad y el empoderamiento.",
             "tag": "fotografia",
-            "imagen": ["img/carteles-19.jpg", "img/carteles-19.jpg","img/carteles-19.jpg"]
+            "imagen": ["img/joaquincomiendo.jpg", "img/joaquincomiendo.jpg","img/carteles-19.jpg"]
         },{
-            "titulo": "prueba 3 foto",
-            "fecha": "mayo 2026",
-            "contenido": "contenido prueba de fotografia 2024",
+            "titulo": "Fotografía personal",
+            "fecha": "2022-2023",
+            "contenido": "Selección de fotografías personales realizadas durante 2023.",
             "tag": "fotografia",
-            "imagen": ["img/carteles-19.jpg", "img/carteles-19.jpg","img/carteles-19.jpg"]
+            "imagen": ["img/PERSONAL1.jpg", "img/PERSONAL2.jpg","img/PERSONAL3.jpg"]
         }
     
         ]
