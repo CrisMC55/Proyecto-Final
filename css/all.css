@@ -30,6 +30,10 @@
     background-color: var(--white);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /*Header siempre fija superior, con el botón de dark mode*/
 
 header {
