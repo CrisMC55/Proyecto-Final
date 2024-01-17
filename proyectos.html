@@ -37,133 +37,128 @@
       <a href=#foto>fotografía</a>
       <a href="">dirección de fotografía</a>
     </div>
+
     <div class="main--diseño" id="divPrueba">
-      <div class="main--diseño--contenedor">
-      <div class="main--diseño--izquierda">
-        <h2>*</h2>
-        <img class="main--diseño--izquierda--imagen" src="img/carteles-19.jpg" alt="">
-        <img src="img/besties.jpg" alt="">
-        <img class="main--diseño--izquierda--imagen-variante" src="img/carteles-19.jpg" alt="">
-      </div>
-      <div class="main--diseño--derecha">
-        <h2>Título del proyecto</h2>
-        <h4>abril 2021</h4>
-        <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur</p>
-        <h5>diseño gráfico</h5>
-      </div>
-    </div>
-    </div>
-    <!--<div class="main--fotografia" id="foto">
-      <div class="main--fotografia--izquierda">
-        <h2>*</h2>
-        <img src="img/carteles-19.jpg" alt="">
-        <img src="img/carteles-19.jpg" alt="">
-        <img src="img/carteles-19.jpg" alt="">
-      </div>
-      <div class="main--fotografia--derecha">
-        <h2>Título del proyecto</h2>
-        <h4>abril 2021</h4>
-        <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur</p>
-        <h5>fotografía</h5>
-      </div>
-    </div>
-  </div>-->
-</body>
-
-<script>
-  function Dark() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
-
-  var url = "./db/proyectos.json"
-
-  fetch(url)
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("Error" + response.status);
-      }
-      return response.json();
-    })
-    .then(function (data) {
-      imprimirInformacion(data.fotografia);
-    });
-
-  const divProyecto = document.getElementById("divPrueba");
-  divProyecto.innerHTML = "";
-
-  function imprimirInformacion(proyectos) {
-    proyectos.forEach(function (proyecto) {
-      divProyecto.innerHTML +=
-        `<div class="main--diseño--contenedor">
+      <!--<div class="main--diseño--contenedor">
         <div class="main--diseño--izquierda">
           <h2>*</h2>
-          <img class="main--diseño--izquierda--imagen" src=${proyecto.imagen[1]} alt="">
-          <img src="${proyecto.imagen[0]}" alt="">
-          <img class="main--diseño--izquierda--imagen-variante" src=${proyecto.imagen[1]} alt="">
+          <img class="main--diseño--izquierda--imagen" src="img/carteles-19.jpg" alt="">
+          <img class="main--diseño--izquierda--imagen-centro" src="img/besties.jpg" alt="">
+          <img class="main--diseño--izquierda--imagen-variante" src="img/carteles-19.jpg" alt="">
         </div>
         <div class="main--diseño--derecha">
-          <h2>${proyecto.titulo}</h2>
-          <h4>${proyecto.fecha}</h4>
-          <p>${proyecto.contenido}</p>
-          <h5>${proyecto.tag}</h5>
+          <h2>Título del proyecto</h2>
+          <h4>abril 2021</h4>
+          <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            pariatur</p>
+          <h5>diseño gráfico</h5>
         </div>
-      </div>`;
-    });
-  }
-</script>
-
-<!-- ... Tu código HTML posterior ... -->
-
-
-<!-- ... Tu código HTML posterior ... -->
-
-<!--var url = "./db/proyectos.json"
-
-  fetch(url)
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("Error" + response.status);
-      }
-      return response.json();
-    })
-    .then(function (data) {
-      imprimirInformacion(data)
-    }
-    )
-
-  const divProyecto = document.getElementById("divPrueba");
-  divProyecto.innerHTML="";
-
-  function imprimirInformacion(info){
-    console.log(info.fotografia[1].titulo)
-    console.log(info.fotografia[0].fecha)
-
-  divProyecto.innerHTML +=
-  `<div class="main--diseño--izquierda">
-        <h2>*</h2>
-        <img class="main--diseño--izquierda--imagen" src=${info.fotografia[0].imagen[1]} alt="">
-        <img src="${info.fotografia[0].imagen[0]}" alt="">
-        <img class="main--diseño--izquierda--imagen-variante" src=${info.fotografia[0].imagen[1]} alt="">
-      </div>
-      <div class="main--diseño--derecha">
-        <h2>${info.fotografia[1].titulo}</h2>
-        <h4>${info.fotografia[1].fecha}</h4>
-        <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+      </div>-->
+    </div>
+    <div class="main--fotografia" id="foto">
+      <!--<div class="main--fotografia--contenedor">
+        <div class="main--fotografia--izquierda">
+          <h2>*</h2>
+          <img src="img/carteles-19.jpg" alt="">
+          <img src="img/carteles-19.jpg" alt="">
+          <img src="img/carteles-19.jpg" alt="">
+        </div>
+        <div class="main--fotografia--derecha">
+          <h2>Título del proyecto</h2>
+          <h4>abril 2021</h4>
+          <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
           ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
           pariatur</p>
-        <h5>diseño gráfico</h5>
-      </div>`
-  }-->
+          <h5>fotografía</h5>
+        </div>
+      </div>-->
+    </div>
+    <!--<div class="main--video" id="video">
+      <div class="main--video--contenedor">
+        <div class="main--video--izquierda">
+          <h2>*</h2>
+          <video controls poster="img/bynposter.png" src="vid/byn.mov"></video>
+        </div>
+        <div class="main--video--derecha">
+          <h2>Título del proyecto</h2>
+          <h4>abril 2021</h4>
+          <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
+          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+          pariatur</p>
+          <h5>dirección de fotografía</h5>
+        </div>
+      </div>
+    </div>-->
+  </div>
 
-</html>
+  <script>
+    function Dark() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  
+    var url = "./db/proyectos.json"
+
+    const divProyecto = document.getElementById("divPrueba");
+    divProyecto.innerHTML = "";
+
+    const divFoto = document.getElementById("foto");
+    divFoto.innerHTML = "";
+  
+    fetch(url)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Error" + response.status);
+        }
+        return response.json();
+      })
+      .then(function (data) {
+        //imprimirInformacion(data.diseño);
+        data.diseño.forEach(function (proyecto) {
+          divProyecto.innerHTML +=
+          `<div class="main--diseño--contenedor">
+          <div class="main--diseño--izquierda">
+            <h2>*</h2>
+            <img class="main--diseño--izquierda--imagen" src=${proyecto.imagen[0]} alt="">
+            <img class="main--diseño--izquierda--imagen-centro" src="${proyecto.imagen[1]}" alt="">
+            <img class="main--diseño--izquierda--imagen-variante" src=${proyecto.imagen[2]} alt="">
+          </div>
+          <div class="main--diseño--derecha">
+            <h2>${proyecto.titulo}</h2>
+            <h4>${proyecto.fecha}</h4>
+            <p>${proyecto.contenido}</p>
+            <h5>${proyecto.tag}</h5>
+          </div>
+        </div>`;
+      });
+
+      data.fotografia.forEach(function (foto) {
+          divFoto.innerHTML +=
+          `<div class="main--fotografia--contenedor">
+        <div class="main--fotografia--izquierda">
+          <h2>*</h2>
+          <img src=${foto.imagen[0]} alt="">
+          <img src=${foto.imagen[1]} alt="">
+          <img src=${foto.imagen[2]} alt="">
+        </div>
+        <div class="main--fotografia--derecha">
+          <h2>${foto.titulo}</h2>
+          <h4>${foto.fecha}</h4>
+          <p> ${foto.contenido}</p>
+          <h5>${foto.tag}</h5>
+        </div>
+      </div>`;
+          
+      });
+
+    });
+  </script>
+
+</body>
