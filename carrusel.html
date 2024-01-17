@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metaetiqueta para la correcta visualización en dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Estilos para la presentación de diapositivas */
+    .miDiapositiva { 
+        display: none; 
+    } /* Oculta todas las imágenes al principio */
+
+    img { 
+        width: 100%; 
+    } /* Hace que las imágenes ocupen el 100% del contenedor */
+
+    .contenedorPresentacion {
+      width: 15%; /* Ancho del contenedor de la presentación de diapositivas */
+      position: relative;
+      margin: auto;
+    }
+
+    /* Estilos para los puntos de navegación (puntos debajo de la presentación de diapositivas) */
+    .puntoNavegacion {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .activo, .puntoNavegacion:hover {
+      background-color: #717171; /* Cambia el color de fondo cuando está activo o se pasa el mouse */
+    }
+
+    /* Animación de desvanecimiento */
+    .desvanecer {
+      animation-name: desvanecer;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes desvanecer {
+      from { opacity: .4; } /* Opacidad inicial */
+      to { opacity: 1; } /* Opacidad final */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Contenedor de la presentación de diapositivas -->
+<div class="contenedorPresentacion">
+  <!-- Diapositivas individuales -->
+  <div class="miDiapositiva desvanecer">
+    <img src="img/BIRDEE1.jpg">
+  </div>
+
+  <div class="miDiapositiva desvanecer">
+    <img src="img/BIRDEE2.jpg">
+  </div>
+
+  <div class="miDiapositiva desvanecer">
+    <img src="img/BIRDEE3.jpg">
+  </div>
+</div>
+<br>
+
+<!-- Puntos de navegación -->
+<div style="text-align:center">
+  <!-- Puntos de navegación -->
+  <span class="puntoNavegacion" onclick="cambiarDiapositiva(1)"></span> 
+  <span class="puntoNavegacion" onclick="cambiarDiapositiva(2)"></span> 
+  <span class="puntoNavegacion" onclick="cambiarDiapositiva(3)"></span> 
+</div>
+
+<!-- Script JavaScript para la funcionalidad de la presentación de diapositivas -->
+<script>
+  // Variable para rastrear el índice actual de la diapositiva
+  let indiceDiapositiva = 1;
+
+  // Llama a la función para mostrar la primera diapositiva al cargar la página
+  mostrarDiapositiva(indiceDiapositiva);
+
+  // Función para cambiar la diapositiva actual
+  function cambiarDiapositiva(n) {
+    // Llama a la función para mostrar la diapositiva indicada y actualiza el índice
+    mostrarDiapositiva(indiceDiapositiva = n);
+  }
+
+  // Función para mostrar las diapositivas
+  function mostrarDiapositiva(n) {
+    // Variables para las diapositivas y los puntos de navegación
+    let i;
+    let diapositivas = document.getElementsByClassName("miDiapositiva");
+    let puntosNavegacion = document.getElementsByClassName("puntoNavegacion");
+
+    // Oculta todas las diapositivas
+    for (i = 0; i < diapositivas.length; i++) {
+      diapositivas[i].style.display = "none";
+    }
+
+    // Muestra la diapositiva actual
+    diapositivas[indiceDiapositiva - 1].style.display = "block";
+
+    // Actualiza el estado de los puntos de navegación
+    for (i = 0; i < puntosNavegacion.length; i++) {
+      puntosNavegacion[i].className = puntosNavegacion[i].className.replace(" activo", "");
+    }
+    
+    // Marca como activo el punto de navegación correspondiente a la diapositiva actual
+    puntosNavegacion[indiceDiapositiva - 1].className += " activo";
+  }
+</script>
+
+</body>
+</html>

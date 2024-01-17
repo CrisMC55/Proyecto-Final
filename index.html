@@ -43,9 +43,31 @@
     <h5>*Si haces click puedes disfrutar de más proyectos así!!</h5>
   </div>
   <div class="derecha">
-    <img class="Derecha1" src="img/CARTEL3.jpg" alt="">
+    <!-- Contenedor de la presentación de diapositivas -->
+
+  <!-- Diapositivas individuales -->
+  <div class="miDiapositiva">
+    <img src="img/BIRDEE1.jpg">
+  </div>
+
+  <div class="miDiapositiva">
+    <img src="img/BIRDEE2.jpg">
+  </div>
+
+  <div class="miDiapositiva">
+    <img src="img/BIRDEE3.jpg">
+  </div>
+
+<!-- Puntos de navegación -->
+<div style="text-align:center">
+  <!-- Puntos de navegación -->
+  <span class="puntoNavegacion" onclick="cambiarDiapositiva(1)"></span> 
+  <span class="puntoNavegacion" onclick="cambiarDiapositiva(2)"></span> 
+  <span class="puntoNavegacion" onclick="cambiarDiapositiva(3)"></span> 
+</div>
+    <!--<img class="Derecha1" src="img/CARTEL3.jpg" alt="">
     <img class="Derecha2" src="img/carteles-19.jpg" alt="">
-    <img class="Derecha3" src="img/vayatela.png" alt="">
+    <img class="Derecha3" src="img/vayatela.png" alt=""> -->
   </div>
 </div>
 <!--Sección de Contacto-->
@@ -80,5 +102,41 @@
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
+
+        // Variable para rastrear el índice actual de la diapositiva
+  let indiceDiapositiva = 1;
+
+// Llama a la función para mostrar la primera diapositiva al cargar la página
+mostrarDiapositiva(indiceDiapositiva);
+
+// Función para cambiar la diapositiva actual
+function cambiarDiapositiva(n) {
+  // Llama a la función para mostrar la diapositiva indicada y actualiza el índice
+  mostrarDiapositiva(indiceDiapositiva = n);
+}
+
+// Función para mostrar las diapositivas
+function mostrarDiapositiva(n) {
+  // Variables para las diapositivas y los puntos de navegación
+  let i;
+  let diapositivas = document.getElementsByClassName("miDiapositiva");
+  let puntosNavegacion = document.getElementsByClassName("puntoNavegacion");
+
+  // Oculta todas las diapositivas
+  for (i = 0; i < diapositivas.length; i++) {
+    diapositivas[i].style.display = "none";
+  }
+
+  // Muestra la diapositiva actual
+  diapositivas[indiceDiapositiva - 1].style.display = "block";
+
+  // Actualiza el estado de los puntos de navegación
+  for (i = 0; i < puntosNavegacion.length; i++) {
+    puntosNavegacion[i].className = puntosNavegacion[i].className.replace(" activo", "");
+  }
+  
+  // Marca como activo el punto de navegación correspondiente a la diapositiva actual
+  puntosNavegacion[indiceDiapositiva - 1].className += " activo";
+}
 </script>
 </html>
