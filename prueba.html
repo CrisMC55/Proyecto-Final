@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Máquina de Escribir</h1>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Cristina Maldonado Cajas';
+var velocidad = 50;
+
+function maquinaEscribir() {
+  var textoActual = document.getElementById("demo").innerHTML;
+  
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML = textoActual + txt.charAt(i);
+    i++;
+    setTimeout(maquinaEscribir, velocidad);
+  } else if (textoActual.length > 0) {
+    setTimeout(function() {
+      document.getElementById("demo").innerHTML = '';
+      i = 0;
+      setTimeout(maquinaEscribir, velocidad);
+    }, 2000);
+  } else {
+    i = 0;
+    setTimeout(maquinaEscribir, velocidad);
+  }
+}
+
+// Esperar 10 segundos antes de iniciar la máquina de escribir
+setTimeout(maquinaEscribir, 10000);
+</script>
+
+</body>
+</html>

@@ -34,7 +34,7 @@
             "fecha": "abril 2023",
             "contenido": "Selección de tres fotografías realizadas para la marca Área. La marca quería transmitir la conexión con el mediterráneo, la tranquilidad y el empoderamiento.",
             "tag": "fotografia",
-            "imagen": ["img/joaquincomiendo.jpg", "img/joaquincomiendo.jpg","img/carteles-19.jpg"]
+            "imagen": ["img/AREA2.jpg", "img/AREA1.jpg","img/AREA3.jpg"]
         },{
             "titulo": "Fotografía personal",
             "fecha": "2022-2023",
@@ -43,5 +43,24 @@
             "imagen": ["img/PERSONAL1.jpg", "img/PERSONAL2.jpg","img/PERSONAL3.jpg"]
         }
     
-        ]
+    ],
+
+    "video": [
+        {
+            "titulo": "La chica de la perla",
+            "fecha": "noviembre 2021",
+            "contenido": "Reproducción del cuadro de La chica de la perla de Johannes Vermeer, en versión vídeo. Primer plano, formato horizontal. Proyecto realizado junto a Mar Chover, Aina Sanz, Angelina Vicheva y Teresa Salinas.",
+            "tag": "dirección de fotografía",
+            "video": ["vid/chicadelaperla.mp4"],
+            "portada": ["img/portada1.jpg"]
+        },{
+            "titulo": "Mar Chover",
+            "fecha": "noviembre 2021",
+            "contenido": "Práctica sobre el uso del contraluz. Proyecto realizado junto a Mar Chover, Aina Sanz, Angelina Vicheva y Teresa Salinas.",
+            "tag": "dirección de fotografía",
+            "video": ["vid/contraluz.mp4"],
+            "portada": ["img/portada2.jpg"]
+        }
+    
+    ]
 }

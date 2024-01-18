@@ -35,67 +35,17 @@
       <a href="#divPrueba">diseño gráfico</a>
       <a href="">editorial</a>
       <a href=#foto>fotografía</a>
-      <a href="">dirección de fotografía</a>
+      <a href="#video">dirección de fotografía</a>
     </div>
 
     <div class="main--diseño" id="divPrueba">
-      <!--<div class="main--diseño--contenedor">
-        <div class="main--diseño--izquierda">
-          <h2>*</h2>
-          <img class="main--diseño--izquierda--imagen" src="img/carteles-19.jpg" alt="">
-          <img class="main--diseño--izquierda--imagen-centro" src="img/besties.jpg" alt="">
-          <img class="main--diseño--izquierda--imagen-variante" src="img/carteles-19.jpg" alt="">
-        </div>
-        <div class="main--diseño--derecha">
-          <h2>Título del proyecto</h2>
-          <h4>abril 2021</h4>
-          <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur</p>
-          <h5>diseño gráfico</h5>
-        </div>
-      </div>-->
     </div>
+
     <div class="main--fotografia" id="foto">
-      <!--<div class="main--fotografia--contenedor">
-        <div class="main--fotografia--izquierda">
-          <h2>*</h2>
-          <img src="img/carteles-19.jpg" alt="">
-          <img src="img/carteles-19.jpg" alt="">
-          <img src="img/carteles-19.jpg" alt="">
-        </div>
-        <div class="main--fotografia--derecha">
-          <h2>Título del proyecto</h2>
-          <h4>abril 2021</h4>
-          <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur</p>
-          <h5>fotografía</h5>
-        </div>
-      </div>-->
     </div>
-    <!--<div class="main--video" id="video">
-      <div class="main--video--contenedor">
-        <div class="main--video--izquierda">
-          <h2>*</h2>
-          <video controls poster="img/bynposter.png" src="vid/byn.mov"></video>
-        </div>
-        <div class="main--video--derecha">
-          <h2>Título del proyecto</h2>
-          <h4>abril 2021</h4>
-          <p> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur</p>
-          <h5>dirección de fotografía</h5>
-        </div>
-      </div>
-    </div>-->
+    
+    <div class="main--video" id="video">
+    </div>
   </div>
 
   <script>
@@ -111,6 +61,9 @@
 
     const divFoto = document.getElementById("foto");
     divFoto.innerHTML = "";
+
+    const divVideo = document.getElementById("video");
+    divVideo.innerHTML = "";
   
     fetch(url)
       .then(function (response) {
@@ -126,9 +79,9 @@
           `<div class="main--diseño--contenedor">
           <div class="main--diseño--izquierda">
             <h2>*</h2>
-            <img class="main--diseño--izquierda--imagen" src=${proyecto.imagen[0]} alt="">
-            <img class="main--diseño--izquierda--imagen-centro" src="${proyecto.imagen[1]}" alt="">
-            <img class="main--diseño--izquierda--imagen-variante" src=${proyecto.imagen[2]} alt="">
+            <img loading=lazy class="main--diseño--izquierda--imagen" src=${proyecto.imagen[0]} alt="">
+            <img loading=lazy class="main--diseño--izquierda--imagen-centro" src="${proyecto.imagen[1]}" alt="">
+            <img loading=lazy class="main--diseño--izquierda--imagen-variante" src=${proyecto.imagen[2]} alt="">
           </div>
           <div class="main--diseño--derecha">
             <h2>${proyecto.titulo}</h2>
@@ -144,15 +97,32 @@
           `<div class="main--fotografia--contenedor">
         <div class="main--fotografia--izquierda">
           <h2>*</h2>
-          <img src=${foto.imagen[0]} alt="">
-          <img src=${foto.imagen[1]} alt="">
-          <img src=${foto.imagen[2]} alt="">
+          <img loading=lazy src=${foto.imagen[0]} alt="">
+          <img loading=lazy src=${foto.imagen[1]} alt="">
+          <img loading=lazy src=${foto.imagen[2]} alt="">
         </div>
         <div class="main--fotografia--derecha">
           <h2>${foto.titulo}</h2>
           <h4>${foto.fecha}</h4>
           <p> ${foto.contenido}</p>
           <h5>${foto.tag}</h5>
+        </div>
+      </div>`;
+          
+      });
+
+      data.video.forEach(function (videos) {
+          divVideo.innerHTML +=
+          `<div class="main--video--contenedor">
+        <div class="main--video--izquierda">
+          <h2>*</h2>
+          <video controls poster=${videos.portada} src=${videos.video}></video>
+        </div>
+        <div class="main--video--derecha">
+          <h2>${videos.titulo}</h2>
+          <h4>${videos.fecha}</h4>
+          <p>${videos.contenido}</p>
+          <h5>${videos.tag}</h5>
         </div>
       </div>`;
           
