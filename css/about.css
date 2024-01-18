@@ -120,3 +120,45 @@ color:var(--dark)
         transform: rotate(360deg);
     }
 }
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 767px) {
+    .titulo{
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    .div1 {
+        height: 80vh;
+    }
+    .imagenFondo{
+        top: 100px;
+        width: 50%;
+    }
+    .imagenFondo2{
+        width: 25%;
+        right: 20px;
+    }
+
+    .about{
+        margin-bottom: 200px;
+    }
+
+    .about p{
+        padding: 30px;
+    }
+    .caritafeliz {
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        color: var(--accent);
+        font-size: 200px;
+        left: 20%;
+        background-color: rgba(255, 255, 255, 0);
+        animation: girar 2s linear infinite;
+        transform-origin: 50% 55%;
+    }
+}

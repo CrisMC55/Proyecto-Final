@@ -18,6 +18,16 @@
     <button class="btnDark" onclick="Dark()"></button> <!--Botón de dark mode, cambia las variables de los colores a blanco y negro-->
 </header>
 <!--Menu de navegación siempre fijo-->
+
+<div class="menuHamburguesa">
+  <div class="iconoHamburguesa">&#9776;</div>
+  <ul class="enlacesMenuHamburguesa">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="about.html">Sobre mi</a></li>
+  </ul>
+</div>
+
 <div class="menu">
   <nav>
       <a href="index.html">Home</a>
@@ -104,7 +114,7 @@
         }
 
         // Variable para rastrear el índice actual de la diapositiva
-  let indiceDiapositiva = 1;
+let indiceDiapositiva = 1;
 
 // Llama a la función para mostrar la primera diapositiva al cargar la página
 mostrarDiapositiva(indiceDiapositiva);
@@ -139,4 +149,5 @@ function mostrarDiapositiva(n) {
   puntosNavegacion[indiceDiapositiva - 1].className += " activo";
 }
 </script>
+
 </html>

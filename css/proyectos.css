@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
 }
 
 .main h1{
@@ -273,4 +273,106 @@
 
 .main--video--izquierda video{
     width: 90%;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 767px) {
+    .main h1{
+        font-size: 60px;
+    }
+
+    .main--diseño--contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main--diseño--izquierda{
+        margin-bottom: 100px;
+    }
+
+    .main--fotografia--contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main--fotografia--izquierda{
+        margin-bottom: 50px;
+    }
+
+    .main--video--contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 120px;
+    }
+
+    .main--video--izquierda{
+        margin-bottom: 50px;
+    }
+
+    .main{
+        margin-bottom: 450px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .main h1{
+        font-size: 50px;
+        padding-left: 60px;
+    }
+
+    .main--enlaces a{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .main--diseño--izquierda--imagen {
+        right: 150px;
+        top: 100px;
+    }
+
+    .main--diseño--izquierda--imagen-centro {
+        top: 50px;
+        left: 50px;
+        width: 50%;
+    }
+
+    .main--diseño--izquierda--imagen-variante {
+        top: 0px;
+        left: 150px;
+    }
+
+    .main--fotografia--izquierda {
+        width: 100%;
+        /* height: 10%; */
+        padding-left: 50px;
+        display: flex;
+        margin: 20px;
+        flex-direction: row;
+        justify-content: center
+    }
+    .main--fotografia--izquierda img {
+        margin: 0px 0px 10px 10px;
+        width: 20%;
+    }
+    .main--video--izquierda {
+        width: 100%;
+    }
+
+    .main--video--izquierda video {
+        width: 70%;
+    }
+
+    .main--video--derecha {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        margin-bottom: 100px;
+    }
+
+    .main--video--contenedor {
+        width: 100%;
+        /* height: 100%; */
+        padding-bottom: 150px;
+    }
 }

@@ -79,9 +79,24 @@ header button:hover{
 }
 
 /*Menu de navegación siempre fijo en todas las páginas*/
-
 .menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 90vh;
+    width: 80vh;
+    height: 7%;
+    background-color: var(--white);
+    z-index: 1001; /* Un z-index mayor que el del header */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark);
+    border-radius: 10px;
+}
+
+.menuHamburguesa{
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -130,4 +145,66 @@ nav a:hover {
 }
 
 
+/*MEDIA QUERYS*/
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    header {
+        height: 6%;
+
+    }
+
+    .menu {
+        width: 60vh;
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 5%;
+    }
+    .menu {
+        width: 55vh;
+    }
+    .menuHamburguesa {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    header {
+        height: 5%;
+        width: 100vw;
+    } 
+    .menu {
+        display: none;
+    }
+    .menuHamburguesa {
+        display: block;
+        width: 50vw;
+      }
+    
+      .iconoHamburguesa {
+        cursor: pointer;
+      }
+    
+      .menuHamburguesa ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .menuHamburguesa ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      /* Agrega estilos para mostrar y ocultar el menú hamburguesa según sea necesario */
+      .menuHamburguesa.mostrar {
+        display: block;
+      }
+}
