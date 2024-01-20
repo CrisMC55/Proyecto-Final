@@ -760,6 +760,7 @@ h1 {
     
         .TextoSecundario2{
             bottom:280px;
+            left: 50px;
         }
     
         .miDiapositiva{
@@ -937,17 +938,17 @@ CSS PROYECTOS
 }
 
 .main--diseño--izquierda--imagen{
-    height: 80%;
-    right: 150px;
-    top:-10px;
+    width: 15%;
+    right: 40px;
+    top:-30px;
     position: absolute;
     z-index: 1;
 }
 
 .main--diseño--izquierda--imagen-variante{
-    height: 80%;
-    top:90px;
-    left: 200px;
+    width: 15%;
+    top:50px;
+    left: 180px;
     position: absolute;
     z-index: 1;
 }
@@ -1112,6 +1113,10 @@ CSS PROYECTOS
     }
     
     @media screen and (max-width: 479px) {
+
+        .main{
+            margin-bottom: 0;
+        }
         .main h1{
             font-size: 50px;
             padding-left: 60px;
@@ -1143,7 +1148,6 @@ CSS PROYECTOS
             /* height: 10%; */
             padding-left: 50px;
             display: flex;
-            margin: 20px;
             flex-direction: row;
             justify-content: center
         }
@@ -1151,8 +1155,18 @@ CSS PROYECTOS
             margin: 0px 0px 10px 10px;
             width: 20%;
         }
+
+        .main--video{
+            width: 85vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin:0;
+
+        }
         .main--video--izquierda {
             width: 100%;
+            padding-left: 0;
         }
     
         .main--video--izquierda video {
@@ -1160,16 +1174,16 @@ CSS PROYECTOS
         }
     
         .main--video--derecha {
-            width: 100%;
-            height: 100%;
-            padding-left: 50px;
-            margin-bottom: 100px;
+            width: 80%;
+            padding-right: 0px;
         }
     
         .main--video--contenedor {
-            width: 100%;
-            /* height: 100%; */
-            padding-bottom: 150px;
+            width: 85vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 80px;
         }
     }
 
@@ -1196,22 +1210,24 @@ CSS PAGINA ABOUT
     z-index: 2;
 }
 
-.imagenFondo {
+.imagenFondo--about {
     width: 25%;
     position: absolute;
     top: 200px;
     left: 50px;
     z-index: 1;
     filter: grayscale(100%) contrast(110%);
+    animation: movimiento 3s infinite ease-in-out;
 }
 
-.imagenFondo2 {
+.imagenFondo2--about {
     width: 15%;
     position: absolute;
     top: 350px;
     right: 80px;
     z-index: 1;
     filter:contrast(60%);
+    animation: movimiento 3s infinite ease-in-out;
 }
 
 h1 {
@@ -1317,11 +1333,11 @@ color:var(--dark)
         .div1 {
             height: 80vh;
         }
-        .imagenFondo{
+        .imagenFondo--about{
             top: 100px;
             width: 50%;
         }
-        .imagenFondo2{
+        .imagenFondo2--about{
             width: 25%;
             right: 20px;
         }
