@@ -9,19 +9,10 @@ function Dark() {
     element.classList.toggle("dark-mode");
 };
 
-//FETCH PROYECTOS//
-
 var url = "./db/proyectos.json"
 
-const divProyecto = document.getElementById("divDesing");
-divProyecto.innerHTML="";
-
-const divFoto = document.getElementById("foto");
-divFoto.innerHTML = " ";
-
-const divVideo = document.getElementById("video");
-divVideo.innerHTML = " ";
-
+//FETCH PROYECTOS//
+if (document.getElementById("divDesing")){
 fetch(url)
   .then(function (response) {
     if (!response.ok) {
@@ -30,6 +21,15 @@ fetch(url)
     return response.json();
   })
   .then(function (data) {
+
+    const divVideo = document.getElementById("video");
+    divVideo.innerHTML = " ";
+
+    const divFoto = document.getElementById("foto");
+    divFoto.innerHTML = " "
+
+    const divProyecto = document.getElementById("divDesing");
+    divProyecto.innerHTML="";
     //imprimirInformacion(data.diseño);
     data.diseño.forEach(function (proyecto) {
       divProyecto.innerHTML +=
@@ -48,6 +48,8 @@ fetch(url)
       </div>
     </div>`;
   });
+
+
 
   data.fotografia.forEach(function (foto) {
       divFoto.innerHTML +=
@@ -85,4 +87,47 @@ fetch(url)
       
   });
 
-});
+}); 
+
+}
+
+//CARRUSEL DE INICIO//
+
+if (document.getElementById("carrusel")){
+  // Variable para rastrear el índice actual de la diapositiva
+  let indiceDiapositiva = 1;
+  
+  // Llama a la función para mostrar la primera diapositiva al cargar la página
+mostrarDiapositiva(indiceDiapositiva);
+  
+  // Función para cambiar la diapositiva actual
+function cambiarDiapositiva(n) {
+    // Llama a la función para mostrar la diapositiva indicada y actualiza el índice
+    mostrarDiapositiva(indiceDiapositiva = n);
+}
+  
+  // Función para mostrar las diapositivas
+function mostrarDiapositiva(n) {
+    // Variables para las diapositivas y los puntos de navegación
+    let i;
+    let diapositivas = document.getElementsByClassName("miDiapositiva");
+    let puntosNavegacion = document.getElementsByClassName("puntoNavegacion");
+  
+    // Oculta todas las diapositivas
+    for (i = 0; i < diapositivas.length; i++) {
+      diapositivas[i].style.display = "none";
+    }
+  
+    // Muestra la diapositiva actual
+    diapositivas[indiceDiapositiva - 1].style.display = "block";
+  
+    // Actualiza el estado de los puntos de navegación
+    for (i = 0; i < puntosNavegacion.length; i++) {
+      puntosNavegacion[i].className = puntosNavegacion[i].className.replace(" activo", "");
+    }
+    
+    // Marca como activo el punto de navegación correspondiente a la diapositiva actual
+    puntosNavegacion[indiceDiapositiva - 1].className += " activo";
+};
+
+}
