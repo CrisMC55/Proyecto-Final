@@ -1,17 +1,20 @@
-// Menu de la Ia que aparece
+// Función que hace que al pulsar el menu en movil aparezca y al volverlo a pulsar desaparezca, el toggle lo que hace es que si no esta la clase, la ñade y si la clase ya está, la quita //
 function menu() {
     var element = document.getElementById("Menu");
     element.classList.toggle("mystyle");
 };
+
+// Función que cambia el valor de las variables de color para poder tener el efecto de pagina en blanco y negro //
   
 function Dark() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 };
 
-var url = "./db/proyectos.json"
-
 //FETCH PROYECTOS//
+
+var url = "./db/proyectos.json" //creamos una variable para acceder al archivo .json//
+
 if (document.getElementById("divDesing")){
 fetch(url)
   .then(function (response) {
@@ -22,7 +25,7 @@ fetch(url)
   })
   .then(function (data) {
 
-    const divVideo = document.getElementById("video");
+    const divVideo = document.getElementById("video");  //Accede al div mediande Id y lo vacia//
     divVideo.innerHTML = " ";
 
     const divFoto = document.getElementById("foto");
@@ -30,17 +33,17 @@ fetch(url)
 
     const divProyecto = document.getElementById("divDesing");
     divProyecto.innerHTML="";
-    //imprimirInformacion(data.diseño);
-    data.diseño.forEach(function (proyecto) {
+    //primera seccion desing
+    data.design.forEach(function (proyecto) { 
       divProyecto.innerHTML +=
-      `<div class="main--diseño--contenedor">
-      <div class="main--diseño--izquierda">
+      `<div class="main--design--contenedor">
+      <div class="main--design--izquierda">
         <h2>*</h2>
-        <img loading=lazy class="main--diseño--izquierda--imagen" src=${proyecto.imagen[0]} alt="">
-        <img loading=lazy class="main--diseño--izquierda--imagen-centro" src="${proyecto.imagen[1]}" alt="">
-        <img loading=lazy class="main--diseño--izquierda--imagen-variante" src=${proyecto.imagen[2]} alt="">
+        <img loading=lazy class="main--design--izquierda--imagen" src=${proyecto.imagen[0]} alt="">
+        <img loading=lazy class="main--design--izquierda--imagen-centro" src="${proyecto.imagen[1]}" alt="">
+        <img loading=lazy class="main--design--izquierda--imagen-variante" src=${proyecto.imagen[2]} alt="">
       </div>
-      <div class="main--diseño--derecha">
+      <div class="main--design--derecha">
         <h2>${proyecto.titulo}</h2>
         <h4>${proyecto.fecha}</h4>
         <p>${proyecto.contenido}</p>
@@ -50,7 +53,7 @@ fetch(url)
   });
 
 
-
+  //segunda seccion fotografia
   data.fotografia.forEach(function (foto) {
       divFoto.innerHTML +=
       `<div class="main--fotografia--contenedor">
@@ -70,6 +73,8 @@ fetch(url)
       
   });
 
+
+  //tercera seccion videos
   data.video.forEach(function (videos) {
       divVideo.innerHTML +=
       `<div class="main--video--contenedor">
@@ -94,21 +99,18 @@ fetch(url)
 //CARRUSEL DE INICIO//
 
 if (document.getElementById("carrusel")){
-  // Variable para rastrear el índice actual de la diapositiva
+
   let indiceDiapositiva = 1;
   
-  // Llama a la función para mostrar la primera diapositiva al cargar la página
+  // Funcion que hace que al cargarse la pagina aparezca la diapositiva 1
 mostrarDiapositiva(indiceDiapositiva);
   
   // Función para cambiar la diapositiva actual
 function cambiarDiapositiva(n) {
-    // Llama a la función para mostrar la diapositiva indicada y actualiza el índice
     mostrarDiapositiva(indiceDiapositiva = n);
 }
   
-  // Función para mostrar las diapositivas
 function mostrarDiapositiva(n) {
-    // Variables para las diapositivas y los puntos de navegación
     let i;
     let diapositivas = document.getElementsByClassName("miDiapositiva");
     let puntosNavegacion = document.getElementsByClassName("puntoNavegacion");
@@ -121,12 +123,11 @@ function mostrarDiapositiva(n) {
     // Muestra la diapositiva actual
     diapositivas[indiceDiapositiva - 1].style.display = "block";
   
-    // Actualiza el estado de los puntos de navegación
     for (i = 0; i < puntosNavegacion.length; i++) {
       puntosNavegacion[i].className = puntosNavegacion[i].className.replace(" activo", "");
     }
     
-    // Marca como activo el punto de navegación correspondiente a la diapositiva actual
+    // Marca el punto del carrusel que corresponde a la diapositiva que se ve
     puntosNavegacion[indiceDiapositiva - 1].className += " activo";
 };
 

@@ -31,7 +31,7 @@
 
 ## Enlaces de interés
 
-* Enlace a mi [Trello](https://trello.com/b/71lAihPv/airitme/) para ver la organización de tareas.
+* Enlace a mi [Trello](https://trello.com/b/hRuRYpMs/proyecto-final) para ver la organización de tareas.
 
 * Enlace a [Excalidraw](https://excalidraw.com/#room=e0ecf7656b178379984b,qVqirQoaqW5HEZZu8rljsQ/) para ver el diseño de las pantallas.
 

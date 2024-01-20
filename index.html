@@ -19,7 +19,7 @@
 
 <!--Menu de navegación para movil-->
 
-<div class="MenuInferior-opcion" onclick="menu()">
+<div class="MenuInferior-opcion" onclick="menu()"> <!--Cuando se hace clck llama a la función menu() que lo que hace es añadir un estilo específico para que se visualice en movil-->
   <h1>:)</h1>
 </div>
 <div class="menuHamburguesa" id="Menu">
@@ -55,28 +55,30 @@
     <h5>*Si haces click puedes disfrutar de más proyectos así!!</h5>
   </div>
   <div class="derecha" id="carrusel">
-    <!-- Contenedor de la presentación de diapositivas -->
 
-  <!-- Diapositivas individuales -->
-  <div class="miDiapositiva">
-    <img loading=lazy src="img/BIRDEE1.jpg" alt="visualización de proyecto editorial fotográfico">
+    <!-- Carrusel de imagenes de proyectos -->
+    <div class="miDiapositiva">
+      <img loading=lazy src="img/BIRDEE1.jpg" alt="visualización de proyecto editorial fotográfico">
+    </div>
+
+    <div class="miDiapositiva">
+      <img loading=lazy src="img/BIRDEE2.jpg" alt="visualización de proyecto editorial fotográfico" >
+    </div>
+
+    <div class="miDiapositiva">
+      <img loading=lazy src="img/BIRDEE3.jpg" alt="visualización de proyecto editorial fotográfico" >
+    </div>
+
+    <!-- Circulos debajo de las imagenes para cambiar entre ellas -->
+    <!--Cuanodo se pulsa llama a la funcion cambiarDiapositiva-->
+    <div style="text-align:center">
+      <span class="puntoNavegacion" onclick="cambiarDiapositiva(1)"></span> 
+      <span class="puntoNavegacion" onclick="cambiarDiapositiva(2)"></span> 
+      <span class="puntoNavegacion" onclick="cambiarDiapositiva(3)"></span> 
+    </div>
   </div>
-
-  <div class="miDiapositiva">
-    <img loading=lazy src="img/BIRDEE2.jpg" alt="visualización de proyecto editorial fotográfico" >
-  </div>
-
-  <div class="miDiapositiva">
-    <img loading=lazy src="img/BIRDEE3.jpg" alt="visualización de proyecto editorial fotográfico" >
-  </div>
-
-<!-- Puntos de navegación -->
-<div style="text-align:center">
-  <!-- Puntos de navegación -->
-  <span class="puntoNavegacion" onclick="cambiarDiapositiva(1)"></span> 
-  <span class="puntoNavegacion" onclick="cambiarDiapositiva(2)"></span> 
-  <span class="puntoNavegacion" onclick="cambiarDiapositiva(3)"></span> 
 </div>
+
 <!--Sección de Contacto-->
 <div class="Trabajemos">
   <h2>Trabajemos junt@s!!</h2>
@@ -85,6 +87,7 @@
   <h3 class="TextoSecundario2">¿Nos tomamos un café?</h3>
   <img loading=lazy src="img/besties.jpg" alt="personas mirandose y sonriendo">
 </div>
+
 <!--Última sección de Newsletter-->
 <div class="newsletter">
   <div class="texto">

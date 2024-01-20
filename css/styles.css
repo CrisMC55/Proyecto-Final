@@ -2,6 +2,8 @@
     cursor:url(/img/cursor.svg), auto;
 }
 
+/*Cargo las fuentes desde mi ordenador y les doy un nombre para poder usarlas*/
+
 @font-face {
     font-family: 'PPNeue';
     src: url('fonts/PPNeueMontreal-Medium.otf') format('opentype'),
@@ -16,11 +18,17 @@
     font-family: 'VictorSerif';
     src: url('fonts/victorserif-30light.woff2') format('woff2');
 }
+
+/*Variables de colores*/
+
 :root{
     --dark: #31302E;
     --accent: #E601D6;
     --white: #FCFAF5;
 }
+
+/*Código que permite quitar la barra lateral de scroll*/
+
 ::-webkit-scrollbar {
     display:none;
 }
@@ -276,13 +284,14 @@ CSS INDEX
     z-index: 2;
 }
 
+
 .imagenFondo {
     width: 15%;
     position: absolute;
     bottom: 200px;
     right: 50px;
     z-index: 1;
-    animation: movimiento 3s infinite ease-in-out;
+    animation: movimiento 3s infinite ease-in-out;  /*Animación en imagenes puntuales que hace que siempre se esten moviendo, como flotando*/
 }
 
 .imagenFondo2 {
@@ -340,11 +349,9 @@ h1 {
 .izquierda{
     width: 60%;
     height: 100vh;
-    /*background-color: aqua;*/
     display: flex;
     align-items: center;
     flex-direction: column;
-    /*padding: 30px;*/
     justify-content: center;
 }
 
@@ -389,7 +396,6 @@ h1 {
 .derecha{
     width: 100%;
     height: 100vh;
-    /*background-color: rgb(21, 114, 114);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,11 +508,9 @@ h1 {
 .texto{
     width: 60%;
     height: 100vh;
-    /*background-color: aqua;*/
     display: flex;
     align-items: center;
     flex-direction: column;
-    /*padding: 30px;*/
     justify-content: center;
 }
 
@@ -550,7 +554,6 @@ h1 {
 .infoFormulario{
     width: 100%;
     height: 100vh;
-    /*background-color: rgb(21, 114, 114);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -630,17 +633,15 @@ h1 {
 
 /*CARRUSEL*/
 
-    /* Estilos para la presentación de diapositivas */
     .miDiapositiva { 
         width: 70%;
         margin-left: 50%;
-    } /* Oculta todas las imágenes al principio */
+    }
 
     img { 
         width: 100%; 
     } /* Hace que las imágenes ocupen el 100% del contenedor */
 
-    /* Estilos para los puntos de navegación (puntos debajo de la presentación de diapositivas) */
     .puntoNavegacion {
       cursor: pointer;
       height: 15px;
@@ -653,7 +654,7 @@ h1 {
     }
 
     .activo, .puntoNavegacion:hover {
-      background-color: #717171; /* Cambia el color de fondo cuando está activo o se pasa el mouse */
+      background-color: #717171; /* El color que se le da al punto cuando el raton pasa por encima o se hace click para señalar que imagen es */
     }
 
     /*MEDIA QUERYS PAGINA INDEX*/
@@ -824,7 +825,7 @@ CSS PROYECTOS
     text-decoration: line-through;
 }
 
-/*FOTOGRAFRIA*/ 
+/* SECCIÓN FOTOGRAFRIA*/ 
 
 .main--fotografia{
     width: 85vw;
@@ -846,11 +847,9 @@ CSS PROYECTOS
 
 .main--fotografia--izquierda{
     width: 50%;
-    /*height: 10%;*/
     padding-left: 50px;
     display: flex;
     margin-right: 20px;
-    /*align-items: center;*/
 }
 
 .main--fotografia--izquierda img{
@@ -871,8 +870,8 @@ CSS PROYECTOS
     padding-right: 50px;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
 }
+
 .main--fotografia--derecha h2{
     font-family: 'VictorSerif';
     color: var(--dark);
@@ -899,9 +898,9 @@ CSS PROYECTOS
     margin-bottom: 10px;
 }
 
-/* Sección de diseño */
+/* SECCIÓN DISEÑO */
 
-.main--diseño{
+.main--design{
     width: 85vw;
     height: 100%;
     display: flex;
@@ -909,17 +908,16 @@ CSS PROYECTOS
     margin:40px 0px;
 }
 
-.main--diseño--contenedor{
+.main--design--contenedor{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     padding: 5% 0px;
-    /*margin-bottom: 100px;*/
     border-top: 1px solid var(--accent);
 }
 
-.main--diseño--izquierda{
+.main--design--izquierda{
     width: 50%;
     height: 100%;
     padding-left: 50px;
@@ -930,14 +928,14 @@ CSS PROYECTOS
     z-index: 2;
 }
 
-.main--diseño--izquierda--imagen-centro{
+.main--design--izquierda--imagen-centro{
     position: absolute;
     margin-top: 20px;
     left:250px;
     width: 30%;
 }
 
-.main--diseño--izquierda--imagen{
+.main--design--izquierda--imagen{
     width: 15%;
     right: 40px;
     top:-30px;
@@ -945,7 +943,7 @@ CSS PROYECTOS
     z-index: 1;
 }
 
-.main--diseño--izquierda--imagen-variante{
+.main--design--izquierda--imagen-variante{
     width: 15%;
     top:50px;
     left: 180px;
@@ -953,14 +951,14 @@ CSS PROYECTOS
     z-index: 1;
 }
 
-.main--diseño--izquierda h2{
+.main--design--izquierda h2{
     font-family: 'VictorSerif';
     font-weight: 100;
     font-size: 100px;
     color: var(--accent)
 }
 
-.main--diseño--derecha{
+.main--design--derecha{
     width: 50%;
     height: 100%;
     padding-right: 50px;
@@ -968,25 +966,25 @@ CSS PROYECTOS
     flex-direction: column;
     justify-content: center;
 }
-.main--diseño--derecha h2{
+.main--design--derecha h2{
     font-family: 'VictorSerif';
     color: var(--dark);
     font-weight: 100;
     margin-bottom: 10px;
 }
-.main--diseño--derecha h4{
+.main--design--derecha h4{
     font-family: 'PPNeue';
     color: var(--dark);
     font-weight: 100;
     margin-bottom: 20px;
 }
 
-.main--diseño--derecha h5{
+.main--design--derecha h5{
     font-family: 'VictorSerif';
     color: var(--accent);
     font-weight: 200;
 }
-.main--diseño--derecha p{
+.main--design--derecha p{
     font-family: 'PPNeue';
     color: var(--dark);
     font-weight: 100;
@@ -994,7 +992,7 @@ CSS PROYECTOS
     margin-bottom: 10px;
 }
 
-/*VIDEO*/
+/*SECCIÓN VIDEO*/
 
 .main--video{
     width: 85vw;
@@ -1079,12 +1077,12 @@ CSS PROYECTOS
             font-size: 60px;
         }
     
-        .main--diseño--contenedor {
+        .main--design--contenedor {
             flex-direction: column;
             align-items: center;
         }
     
-        .main--diseño--izquierda{
+        .main--design--izquierda{
             margin-bottom: 100px;
         }
     
@@ -1127,18 +1125,18 @@ CSS PROYECTOS
             margin-right: 10px;
         }
     
-        .main--diseño--izquierda--imagen {
+        .main--design--izquierda--imagen {
             right: 150px;
             top: 100px;
         }
     
-        .main--diseño--izquierda--imagen-centro {
+        .main--design--izquierda--imagen-centro {
             top: 50px;
             left: 50px;
             width: 50%;
         }
     
-        .main--diseño--izquierda--imagen-variante {
+        .main--design--izquierda--imagen-variante {
             top: 0px;
             left: 150px;
         }
@@ -1186,6 +1184,7 @@ CSS PROYECTOS
             padding-bottom: 80px;
         }
     }
+
 
 /**
  
@@ -1307,7 +1306,7 @@ color:var(--dark)
     font-size: 200px;
     left:40%;
     background-color: rgba(255, 255, 255, 0);
-    animation: girar 2s linear infinite;
+    animation: girar 2s linear infinite; /*Animación que hace que la carita feliz del final esté siempre girando*/
     transform-origin: 50% 55%;
 }
 
