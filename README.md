@@ -33,6 +33,6 @@
 
 * Enlace a mi [Trello](https://trello.com/b/hRuRYpMs/proyecto-final) para ver la organización de tareas.
 
-* Enlace a [Excalidraw](https://excalidraw.com/#room=e0ecf7656b178379984b,qVqirQoaqW5HEZZu8rljsQ/) para ver el diseño de las pantallas.
+* Enlace a [Figma](https://www.figma.com/file/FZ0rEq6GUv7qlIy2qfVRrn/Proyecto-Final-Master?type=design&node-id=0%3A1&mode=design&t=AApReBCAm1BlhXcm-1) para ver el diseño de las pantallas.
 
 - _**Todas las imágenes y vídeos que aparecen en este proyecto son personales y no pueden divulgarse sin mi consentimiento previo o el de las personas junto a las que se han realizado los proyectos.**_
